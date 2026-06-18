@@ -1,6 +1,6 @@
 import TodoItem from "./TodoItem";
 
-function TodoList({ tasks, deleteTask }) {
+function TodoList({ tasks, deleteTask, editTask }) {
   return (
     <div>
       {tasks.map((task) => (
@@ -8,6 +8,7 @@ function TodoList({ tasks, deleteTask }) {
           key={task.id}
           task={task}
           deleteTask={deleteTask}
+          editTask={editTask}
         />
       ))}
     </div>
