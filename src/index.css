@@ -10,10 +10,28 @@ body {
   text-align: center;
 }
 
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 12px;
+}
+
+button {
+  padding: 12px 20px;
+  cursor: pointer;
+}
+
 .task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background: white;
   padding: 15px;
   margin: 10px 0;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
